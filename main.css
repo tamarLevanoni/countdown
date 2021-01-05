@@ -28,6 +28,9 @@ div#sec {
 button#startButton {
   grid-area: 7/4/9/5;
 }
+#pauseButton {
+  grid-area: 7/5/9/6;
+}
 button {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-radius: 100%;
@@ -45,7 +48,7 @@ button:disabled {
   background-color: gray;
 }
 button#stopButton {
-  grid-area: 7/5/9/6;
+  grid-area: 7/6/9/7;
 }
 input {
   width: 50px;

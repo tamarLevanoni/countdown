@@ -81,3 +81,9 @@ function loaded() {
     document.querySelector("#cat").hidden = true;
   }, 5000);
 }
+function pause() {
+  clearInterval(intervalID);
+  clearTimeout(timeoutID);
+  var startButton = document.querySelector("#startButton");
+  startButton.disabled = false;
+}
