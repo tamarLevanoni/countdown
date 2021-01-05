@@ -9,6 +9,9 @@ minutesInput.oninput = function () {
   var errorMin = document.querySelector("#errorMin");
 
   if (value >= 0) {
+    errorMin.innerHTML = "<i class='ico'>&#9888;</i>The number must be bigger than 0";
+  } else {
+    errorMin.textContent = "";
     var minutes = document.querySelector("#minutes");
     minutes.textContent = fixNum(value);
   }
@@ -19,8 +22,7 @@ secondsInput.oninput = function () {
   var errorSec = document.querySelector("#errorSec");
 
   if (value > 59 || value < 0) {
-    errorSec.innerHTML =
-      "<i class='ico'>&#9888;</i>The number must be between 0 to 59";
+    errorSec.innerHTML = "<i class='ico'>&#9888;</i>The number must be between 0 to 59";
   } else {
     errorSec.textContent = "";
     var seconds = document.querySelector("#seconds");
@@ -29,8 +31,7 @@ secondsInput.oninput = function () {
 };
 function start(event) {
   event.target.disabled = true;
-  var ms =
-    (Number(minutes.textContent) * 60 + Number(seconds.textContent)) * 1000;
+  var ms = (Number(minutes.textContent) * 60 + Number(seconds.textContent)) * 1000;
   minutesInput.disabled = true;
   secondsInput.disabled = true;
   timeoutID = setTimeout(async function () {
