@@ -8,7 +8,7 @@ minutesInput.oninput = function () {
   var value = Number(this.value);
   var errorMin = document.querySelector("#errorMin");
 
-  if (value >= 0) {
+  if (value > 0) {
     errorMin.innerHTML = "<i class='ico'>&#9888;</i>The number must be bigger than 0";
   } else {
     errorMin.textContent = "";
