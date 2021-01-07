@@ -7,8 +7,11 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-    <div id="load"></div>
-    <img id="cat" hidden onload="loaded()"></img>
+    <div class="catcontainer">
+      <div id="load"></div>
+
+      <img id="cat" hidden onload="loaded()"></img>
+    </div>
     <div id="min">
       <label for="minutesIn"
         >Minutes
@@ -30,7 +33,7 @@
     </div>
     <button id="startButton" onclick="start(event)">Start</button>
     <button id="stopButton" onclick="stop()">Stop</button>
-    <button id="pauseButton" onclick="pause()">pause</button>
+    <button id="pauseButton" onclick="pause()">Pause</button>
 
     <script src="main.js"></script>
   </body>

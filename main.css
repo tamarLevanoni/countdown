@@ -1,7 +1,7 @@
 div#timeout {
   text-align: center;
   font-size: xxx-large;
-  grid-area: 4/4/7/6;
+  grid-area: 5/4/5/6;
 }
 
 body {
@@ -67,9 +67,9 @@ i.ico {
   font-style: italic;
 }
 #cat {
-  z-index: 0;
-  grid-area: 1/1/9/7;
   max-block-size: -webkit-fill-available;
+  flex: auto;
+  object-fit: contain;
 }
 .lds-default {
   display: inline-block;
@@ -155,4 +155,9 @@ i.ico {
   50% {
     transform: scale(1.5);
   }
+}
+.catcontainer {
+  display: flex;
+  grid-area: 2/4/5/6;
+  justify-self: center;
 }
